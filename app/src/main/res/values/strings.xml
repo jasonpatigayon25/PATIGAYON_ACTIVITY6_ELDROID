@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">PATIGAYON ACTIVITY6</string>
+    <string name="alert_dialog_title">Alert</string>
+    <string name="alert_dialog_message">This is an alert dialog.</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="alert_dialog_user_input">Alert response: %1$s</string>
+    <string name="date_picker_title">Date chosen: %1$s</string>
+    <string name="time_picker_title">Time chosen: %1$s</string>
+    <string name="custom_dialog_input_text">Custom dialog input: %1$s</string>
+    <string name="custom_dialog_title">Custom Dialog</string>
+    <string name="pressed_ok">Pressed OK!</string>
+    <string name="cancelled">Cancelled!</string>
+
 </resources>
