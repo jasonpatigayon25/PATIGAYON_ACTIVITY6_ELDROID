@@ -3,6 +3,7 @@ package com.patigayon.activity6
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.os.Bundle
+import android.view.animation.AnimationUtils
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -14,35 +15,44 @@ class MainActivity : AppCompatActivity() {
     private lateinit var timePickerSelection: TextView
     private lateinit var customDialogSelection: TextView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_main)
 
-        alertDialogSelection = findViewById(R.id.alertDialogSelection)
-        datePickerSelection = findViewById(R.id.datePickerSelection)
-        timePickerSelection = findViewById(R.id.timePickerSelection)
-        customDialogSelection = findViewById(R.id.customDialogSelection)
+            val buttonClick = AnimationUtils.loadAnimation(this, R.anim.button_click)
 
-        val alertDialogButton = findViewById<Button>(R.id.alertDialogButton)
-        alertDialogButton.setOnClickListener {
-            showAlertDialog()
+            alertDialogSelection = findViewById(R.id.alertDialogSelection)
+
+            alertDialogSelection = findViewById(R.id.alertDialogSelection)
+            datePickerSelection = findViewById(R.id.datePickerSelection)
+            timePickerSelection = findViewById(R.id.timePickerSelection)
+            customDialogSelection = findViewById(R.id.customDialogSelection)
+
+
+            val alertDialogButton = findViewById<Button>(R.id.alertDialogButton)
+            alertDialogButton.setOnClickListener {
+                it.startAnimation(buttonClick)
+                showAlertDialog()
+            }
+
+            val datePickerDialogButton = findViewById<Button>(R.id.datePickerDialogButton)
+            datePickerDialogButton.setOnClickListener {
+                it.startAnimation(buttonClick)
+                showDatePickerDialog()
+            }
+
+            val timePickerDialogButton = findViewById<Button>(R.id.timePickerDialogButton)
+            timePickerDialogButton.setOnClickListener {
+                it.startAnimation(buttonClick)
+                showTimePickerDialog()
+            }
+
+            val customDialogButton = findViewById<Button>(R.id.customDialogButton)
+            customDialogButton.setOnClickListener {
+                it.startAnimation(buttonClick)
+                showCustomDialog()
+            }
         }
-
-        val datePickerDialogButton = findViewById<Button>(R.id.datePickerDialogButton)
-        datePickerDialogButton.setOnClickListener {
-            showDatePickerDialog()
-        }
-
-        val timePickerDialogButton = findViewById<Button>(R.id.timePickerDialogButton)
-        timePickerDialogButton.setOnClickListener {
-            showTimePickerDialog()
-        }
-
-        val customDialogButton = findViewById<Button>(R.id.customDialogButton)
-        customDialogButton.setOnClickListener {
-            showCustomDialog()
-        }
-    }
 
     private fun showAlertDialog() {
         val editText = EditText(this)

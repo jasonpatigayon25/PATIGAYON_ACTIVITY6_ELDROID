@@ -2,7 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@drawable/background_screen">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +18,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Show Alert"
-            android:layout_marginTop="8dp" />
+            android:background="@drawable/button_rounded"
+            android:layout_marginTop="8dp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/black"
+            android:padding="12dp" />
         <TextView
             android:id="@+id/alertDialogSelection"
             android:layout_width="match_parent"
@@ -30,7 +36,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pick Date"
-            android:layout_marginTop="8dp" />
+            android:background="@drawable/button_rounded"
+            android:layout_marginTop="8dp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/black"
+            android:padding="12dp" />
         <TextView
             android:id="@+id/datePickerSelection"
             android:layout_width="match_parent"
@@ -44,7 +54,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pick Time"
-            android:layout_marginTop="8dp" />
+            android:background="@drawable/button_rounded"
+            android:layout_marginTop="8dp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/black"
+            android:padding="12dp" />
         <TextView
             android:id="@+id/timePickerSelection"
             android:layout_width="match_parent"
@@ -58,7 +72,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Show Custom Dialog"
-            android:layout_marginTop="8dp" />
+            android:background="@drawable/button_rounded"
+            android:layout_marginTop="8dp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/black"
+            android:padding="12dp" />
         <TextView
             android:id="@+id/customDialogSelection"
             android:layout_width="match_parent"
