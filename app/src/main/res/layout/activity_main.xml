@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/alertDialogButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Alert"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/alertDialogSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Alert selection will show here"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/datePickerDialogButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/datePickerSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Date selection will show here"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/timePickerDialogButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Time"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/timePickerSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Time selection will show here"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/customDialogButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Custom Dialog"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/customDialogSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Custom dialog input will show here"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</ScrollView>
