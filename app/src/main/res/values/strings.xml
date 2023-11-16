@@ -11,5 +11,6 @@
     <string name="custom_dialog_title">Custom Dialog</string>
     <string name="pressed_ok">Pressed OK!</string>
     <string name="cancelled">Cancelled!</string>
-
+    <string name="custom_dialog_hint">Enter text</string>
+    <string name="custom_dialog_submit">Submit</string>
 </resources>
