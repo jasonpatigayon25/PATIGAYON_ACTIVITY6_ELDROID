@@ -17,7 +17,7 @@
             android:id="@+id/alertDialogButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Show Alert"
+            android:text="@string/show_alert"
             android:background="@drawable/button_rounded"
             android:layout_marginTop="8dp"
             android:textColor="#FFFFFF"
@@ -28,14 +28,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Alert selection will show here"
+            android:text="@string/alert_selection_will_show_here"
+            android:textColor="#800000"
             android:gravity="center_horizontal" />
 
         <Button
             android:id="@+id/datePickerDialogButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pick Date"
+            android:text="@string/pick_date"
             android:background="@drawable/button_rounded"
             android:layout_marginTop="8dp"
             android:textColor="#FFFFFF"
@@ -46,14 +47,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Date selection will show here"
+            android:text="@string/date_selection_will_show_here"
+            android:textColor="#800000"
             android:gravity="center_horizontal" />
 
         <Button
             android:id="@+id/timePickerDialogButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pick Time"
+            android:text="@string/pick_time"
             android:background="@drawable/button_rounded"
             android:layout_marginTop="8dp"
             android:textColor="#FFFFFF"
@@ -64,14 +66,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Time selection will show here"
+            android:text="@string/time_selection_will_show_here"
+            android:textColor="#800000"
             android:gravity="center_horizontal" />
 
         <Button
             android:id="@+id/customDialogButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Show Custom Dialog"
+            android:text="@string/show_custom_dialog"
             android:background="@drawable/button_rounded"
             android:layout_marginTop="8dp"
             android:textColor="#FFFFFF"
@@ -82,7 +85,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Custom dialog input will show here"
+            android:text="@string/custom_dialog_input_will_show_here"
+            android:textColor="#800000"
             android:gravity="center_horizontal" />
 
     </LinearLayout>
